@@ -18,3 +18,18 @@ let firstName; // camel notation is used as the namin convention for javascript
 const interestRate = 0.3; // with constants we an create values that cannot be reasigned
 // interestRate = 1; 
 console.log(interestRate);
+
+
+
+// we have different types in js
+// primitives / Value types and Reference types
+
+// Primitives
+
+let name = "Pete"; // string literal
+let age = 30; // number literal
+let isApproved = true; // boolean literal
+//NB: true and false are reserved keywords
+let myFirstName = undefined; // not a common practice to do so
+let selectedColor = null; //  used to clear the value of a variable
+print(name)
