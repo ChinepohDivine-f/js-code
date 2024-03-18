@@ -33,3 +33,20 @@ let isApproved = true; // boolean literal
 let myFirstName = undefined; // not a common practice to do so
 let selectedColor = null; //  used to clear the value of a variable
 print(name)
+
+
+// javascript objects
+
+let person = {
+    name: 'Mosh',
+    age: 45,
+}
+
+// Dot notation 
+person.name = 'Josh';
+
+// bracket notation
+let selection = 'name';
+person[selection] = 'Maria';
+
+console.log(person.name)
