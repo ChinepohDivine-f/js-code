@@ -47,3 +47,7 @@ do {
     if (i % 2 !== 0) console.log(i);
     i++;
 } while (i <= 10);
+
+
+// in finite loop
+// using the while(true), or wrong contraints or forgetting to incriment
