@@ -58,3 +58,10 @@ let selectedColors = ['red', 'blue'];
 selectedColors[2] = 1;
 console.log(selectedColors);
 console.log(selectedColors.length);
+
+function greet(yourName, yourLastName) { // funtion parameter yourName
+    console.log('hello ' + yourName + ' ' + yourLastName);
+}
+
+greet('Sarah'); // funciton with argument
+greet('Agnes', 'Takungo')
