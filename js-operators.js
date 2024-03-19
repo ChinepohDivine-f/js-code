@@ -108,8 +108,6 @@ let currentColor = userColor || defualtColor;
 console.log(currentColor); // if the user set  a color it is displayed else the defualt
 // color with be display as the user color will be undefined hence falsy and the truthy with the defualt color will be displayed
 
-
-
 // bitwise operators
 
 // 1 = 00000001
@@ -140,13 +138,21 @@ console.log(message);
 //  with the bitwise AND we can check permissions
 // .. this is one real world usecase
 
+// precedence of operators
 
-
-
-
-// precedence of operators 
-
-// js using bodmas to measure precedence 
+// js using bodmas to measure precedence
 // the safest way is to use bracket to group the expression 4
 
 console.log((4 + 4) ** 2);
+
+// swapping in js
+let a = "red";
+let b = "blue";
+
+// swap varaible is required to swap
+let swap = a;
+ a = b;
+ b = temp;
+
+console.log(a);
+console.log(b);
