@@ -84,3 +84,29 @@ console.log(false || true);
 let eligable = true;
 let applicationRefused = !eligable;
 console.log("Application Refused:", applicationRefused);
+
+
+
+// javascript truthy and falsy values
+
+// Falsy (false) 
+
+// undefined
+// null
+// 0
+// false
+// '' or ""
+// NaN
+
+// Anything that is not falsy is truthy 
+
+// javacript short - circuting
+console.log(false || 1 || 2); //returns 1 because it is the first truthy value from the left hand side
+
+
+let userColor = 'red';
+let defualtColor = 'blue';
+let currentColor = userColor || defualtColor;
+
+console.log(currentColor); // if the user set  a color it is displayed else the defualt
+// color with be display as the user color will be undefined hence falsy and the truthy with the defualt color will be displayed
