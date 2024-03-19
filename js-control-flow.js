@@ -46,25 +46,29 @@ do {
 
 // in finite loop
 // using the while(true), or wrong contraints or forgetting to incriment
- 
 
 // for-in
 const person = {
-    name: 'Divine',
-    age: 30,
-}
+  name: "Divine",
+  age: 30,
+};
 
 // using for-in with objects
 
 for (let key in person) {
-    console.log(key+ ': '+ person[key]);
+  console.log(key + ": " + person[key]);
 }
 
+// using for-in with list or arrays
 
-// using for-in with list or arrays 
-
-const colors = ['red', 'green', 'blue'];
+const colors = ["red", "green", "blue"];
 for (let index in colors) {
-    console.log(index, colors[index]);
+  console.log(index, colors[index]);
 }
 
+// for-of
+
+for (let color of colors) {
+  // with for-off we can get the values directly withou using bracket notation
+  console.log(color);
+}
