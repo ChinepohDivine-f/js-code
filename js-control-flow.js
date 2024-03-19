@@ -72,3 +72,18 @@ for (let color of colors) {
   // with for-off we can get the values directly withou using bracket notation
   console.log(color);
 }
+
+
+// break keyword
+
+let p = 0;
+while (p <= 10) {
+    if (p === 7) break;
+    if (p % 2 === 0) {
+        p++;
+        continue; // ugly way of writing code
+    }
+    console.log(p)
+    p++;
+}
+
