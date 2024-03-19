@@ -59,9 +59,19 @@ selectedColors[2] = 1;
 console.log(selectedColors);
 console.log(selectedColors.length);
 
+
+// function to perform a taks
 function greet(yourName, yourLastName) { // funtion parameter yourName
     console.log('hello ' + yourName + ' ' + yourLastName);
 }
 
 greet('Sarah'); // funciton with argument
-greet('Agnes', 'Takungo')
+greet('Agnes', 'Takungo');
+
+// function to calculate a value
+function sqaure(num) {
+    return num * num;
+}
+
+
+console.log(sqaure(12));
