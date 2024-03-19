@@ -24,3 +24,13 @@ switch (role) {
     default:
         console.log('Unkown User');
 }
+
+// if else statements are preferable as the shorten the line of code
+
+
+
+// for loops
+for (let i = 0; i <= 5; i++) {
+    if (i % 2 !== 0) console.log(i); // this program prints the ood number from 1 to 5
+}
+
