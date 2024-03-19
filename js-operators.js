@@ -85,11 +85,9 @@ let eligable = true;
 let applicationRefused = !eligable;
 console.log("Application Refused:", applicationRefused);
 
-
-
 // javascript truthy and falsy values
 
-// Falsy (false) 
+// Falsy (false)
 
 // undefined
 // null
@@ -98,15 +96,46 @@ console.log("Application Refused:", applicationRefused);
 // '' or ""
 // NaN
 
-// Anything that is not falsy is truthy 
+// Anything that is not falsy is truthy
 
 // javacript short - circuting
 console.log(false || 1 || 2); //returns 1 because it is the first truthy value from the left hand side
 
-
-let userColor = 'red';
-let defualtColor = 'blue';
+let userColor = "red";
+let defualtColor = "blue";
 let currentColor = userColor || defualtColor;
 
 console.log(currentColor); // if the user set  a color it is displayed else the defualt
 // color with be display as the user color will be undefined hence falsy and the truthy with the defualt color will be displayed
+
+
+
+// bitwise operators
+
+// 1 = 00000001
+// 2 = 00000010
+// 3 = 00000011
+// 0 = 00000000 ..etc
+
+console.log(1 | 2); // bitwise or: return 3
+console.log(1 & 2); // bitwise and: return 0
+
+// simple access control system using bitwise operators
+// Read, wirte , execute
+// 00000100
+// 00000010
+// 00000001
+
+const readPermission = 4;
+const writePermission = 2;
+const executePermission = 1;
+
+let myPermission = 0;
+myPermission = myPermission | readPermission | writePermission;
+let message = myPermission & readPermission ? "yes" : "no";
+
+console.log(message);
+
+// with bitwise OR we can add Permissions
+//  with the bitwise AND we can check permissions
+// .. this is one real world usecase
