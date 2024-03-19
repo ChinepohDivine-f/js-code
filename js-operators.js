@@ -139,3 +139,14 @@ console.log(message);
 // with bitwise OR we can add Permissions
 //  with the bitwise AND we can check permissions
 // .. this is one real world usecase
+
+
+
+
+
+// precedence of operators 
+
+// js using bodmas to measure precedence 
+// the safest way is to use bracket to group the expression 4
+
+console.log((4 + 4) ** 2);
