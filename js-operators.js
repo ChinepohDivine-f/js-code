@@ -39,3 +39,19 @@ console.log(z < 1);
 // equality operators in js
 console.log(z === 1);
 console.log(z !== 1);
+
+
+
+// special equality operators
+// in js we have strict equality and loose equality operators 
+
+// strict equaity
+console.log(1 === 1); // true
+console.log('1' === 1); //false
+
+// loose equality
+console.log(1 == 1); //true
+console.log('1' == 1); //true
+console.log(true == 1); //true
+
+// its more advisable to use strict operators 
