@@ -12,3 +12,10 @@ function checkSpeed(speed) {
 
   console.log("Points", points); // display points to screen
 }
+
+
+// if the speed limit is 70 return OK
+// if five steps higher than 70 return 1 point
+// if 12 points then return license suspsended
+// create varaibles to make the code more understandable 
+// and return statement when necessary
