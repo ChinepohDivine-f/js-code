@@ -34,3 +34,10 @@ for (let i = 0; i <= 5; i++) {
     if (i % 2 !== 0) console.log(i); // this program prints the ood number from 1 to 5
 }
 
+
+// white loops
+let i = 0;
+while (i <= 5) {
+    if (i % 2 !== 0) console.log(i);
+    i++;
+}
