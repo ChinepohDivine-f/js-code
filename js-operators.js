@@ -27,3 +27,15 @@ let z = 50; // using the "=" sign called the asignment operators we can asign va
 z += 1; // addition asignment operator
 z *= 3;  // multiplication asignment operator
 // and vice versa it works for all operators 
+
+
+// comparison operators 
+// relational operators
+console.log(z > 0);
+console.log(z >= 1);
+console.log(z <= 1);
+console.log(z < 1);
+
+// equality operators in js
+console.log(z === 1);
+console.log(z !== 1);
