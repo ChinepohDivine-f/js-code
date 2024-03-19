@@ -18,3 +18,12 @@ console.log(x++); // prints the value then incriments it
 // decriment 
 console.log(--y); // decriments then print the value
 console.log(y--); // prints the value then decriments it
+
+
+
+// asignment operators
+
+let z = 50; // using the "=" sign called the asignment operators we can asign values to variables in js
+z += 1; // addition asignment operator
+z *= 3;  // multiplication asignment operator
+// and vice versa it works for all operators 
