@@ -55,3 +55,15 @@ console.log('1' == 1); //true
 console.log(true == 1); //true
 
 // its more advisable to use strict operators 
+
+
+
+// if a customer has more gold than 100points
+// they are a 'gold' customer, otherwise,
+// they are a 'silver' customer.
+
+
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver';
+
+console.log(type);
