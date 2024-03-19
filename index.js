@@ -32,7 +32,7 @@ let isApproved = true; // boolean literal
 //NB: true and false are reserved keywords
 let myFirstName = undefined; // not a common practice to do so
 let selectedColor = null; //  used to clear the value of a variable
-print(name)
+// print(name)
 
 
 // javascript objects
@@ -50,3 +50,11 @@ let selection = 'name';
 person[selection] = 'Maria';
 
 console.log(person.name)
+
+
+// arrays: a data structure used to represent a list of items
+
+let selectedColors = ['red', 'blue'];
+selectedColors[2] = 1;
+console.log(selectedColors);
+console.log(selectedColors.length);
