@@ -95,3 +95,7 @@ console.log(person);
 // problem with var: the varibles are not limited to the block but to the function
 // var also modifies the window object which is not a best pracice
 // the let is block scoped.
+
+
+// use the arrow funtion to inherit the object . when using a callbak funtion. bucause
+// by default they inherit the window element
