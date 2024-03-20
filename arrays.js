@@ -25,3 +25,24 @@ console.log(numbers.includes(1));
 // the parameter specifies the index of the character we dealing with
 // array
 console.log(numbers.indexOf(1, 2)); // this finds the second instance of 1 in the array
+
+
+
+
+/// finding elements ( reference types)
+
+const courses = [
+    { id: 2, userName: 'king' },
+    {id: 4, userName: 'Boss'}
+];
+
+// using the find method and a callback function
+
+const course = courses.find(function (course) {
+    return course.name === 'a';
+});
+
+// if the index of an element is not available
+// javascript returns -1 
+
+console.log(course)
