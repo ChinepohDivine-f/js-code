@@ -54,3 +54,32 @@ function interest(principal, rate = 3.5, years = 5) {
 }
 
 console.log(interest(10000, 3, 5)); // we can use undefined to skip a defualt parameter 
+
+
+
+
+
+
+
+// getter and setter
+
+
+// getter are used to get properties 
+// setters are used to set properties
+
+const person = {
+    firstName: 'Mosh',
+    lastName: 'Peeker',
+    get fullName() {
+        return '${person.firsName} ${person.lastName}'
+    },
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+}
+
+person.fullName = 'John Smith';
+
+console.log(person);
