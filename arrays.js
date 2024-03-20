@@ -126,5 +126,19 @@ myCourses.sort(function (a, b) {
     if (nameA > nameB) return 1;
     return 0;
 })
-
+ 
 console.log(myCourses);
+
+
+// learn how to use the some and every methods
+
+const atLeastOnePositive = numbers.some(function (value) {
+    return value >= 0;
+});
+
+const isAllPositive = numbers.every(function (value) {
+  return value >= 0;
+});
+
+
+console.log(atLeastOnePositive, isAllPositive)
