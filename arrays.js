@@ -62,3 +62,10 @@ const last = numbers.pop();
 console.log(last, numbers);
 
 
+
+// empty and array 
+numbers = []; // cannot be use when the memory has been referenced
+numbers.length = 0; // best solution
+numbers.splice(0, numbers.length);
+
+
