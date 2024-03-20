@@ -15,6 +15,13 @@ for (let entry of Object.entries(circle)) console.log(entry);
 // we can check entries of an object using this format
 if ("color" in circle) console.log(true);
 
+
+
+
+
+
+
+
 // cloning objects
 // the old method
 const another = {};
@@ -40,3 +47,12 @@ console.log(another1);
 
 const another3 = { ...circle }; // '...' represent the spread operator
 // this takes all the properties and methods of an object and put them between the curly braces
+
+
+
+
+
+
+
+// javascript has a garbage collector an deallocate memory from variables that are not used automatically
+
