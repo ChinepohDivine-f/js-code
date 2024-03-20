@@ -14,6 +14,17 @@ console.log(message.trim); // we can also trip left and right separately
 const another = new String("hi");
  
 
+
+
 // we can also use escape notation in js
 
 console.log('He\'ll how are you. \nDid you eat yesterday!');
+
+// template literals starting from es6 
+
+// const another2 =
+//     'this is my code {variable} 
+//     dont toufh it';
+
+
+// is somehow like dart
