@@ -93,4 +93,38 @@ console.log(copy);
 // iterating an array
 for (let number of combined) console.log(number);
 
-combined.forEach((number) => console.log(number));
+combined.forEach((number, index) => console.log(index,number));
+
+
+
+
+// joining arrays
+const joined = combined.join(',');
+console.log(joined);
+
+const message = 'Hello Father!';
+const parts = message.split(' ');
+const combinedParts = parts.join('-');
+console.log(combinedParts); // retrun a usl slug
+
+
+
+// sorting arrays
+const myCourses = [
+    { id: 1, myName: 'Node.js' },
+    {id: 2, myName: 'javascript'}
+];
+
+myCourses.sort(function (a, b) {
+    // a < b => -1
+    // a > b => 1
+    // a === b => 0
+    const nameA = a.myName.toLocaleLowerCase();
+    const nameB = b.myName.toLocaleLowerCase();
+
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    return 0;
+})
+
+console.log(myCourses);
