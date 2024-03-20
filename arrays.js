@@ -87,58 +87,66 @@ console.log(combinesSpread);
 const copy = [...combined];
 console.log(copy);
 
-
-
-
 // iterating an array
 for (let number of combined) console.log(number);
 
-combined.forEach((number, index) => console.log(index,number));
-
-
-
+combined.forEach((number, index) => console.log(index, number));
 
 // joining arrays
-const joined = combined.join(',');
+const joined = combined.join(",");
 console.log(joined);
 
-const message = 'Hello Father!';
-const parts = message.split(' ');
-const combinedParts = parts.join('-');
+const message = "Hello Father!";
+const parts = message.split(" ");
+const combinedParts = parts.join("-");
 console.log(combinedParts); // retrun a usl slug
-
-
 
 // sorting arrays
 const myCourses = [
-    { id: 1, myName: 'Node.js' },
-    {id: 2, myName: 'javascript'}
+  { id: 1, myName: "Node.js" },
+  { id: 2, myName: "javascript" },
 ];
 
 myCourses.sort(function (a, b) {
-    // a < b => -1
-    // a > b => 1
-    // a === b => 0
-    const nameA = a.myName.toLocaleLowerCase();
-    const nameB = b.myName.toLocaleLowerCase();
+  // a < b => -1
+  // a > b => 1
+  // a === b => 0
+  const nameA = a.myName.toLocaleLowerCase();
+  const nameB = b.myName.toLocaleLowerCase();
 
-    if (nameA < nameB) return -1;
-    if (nameA > nameB) return 1;
-    return 0;
-})
- 
+  if (nameA < nameB) return -1;
+  if (nameA > nameB) return 1;
+  return 0;
+});
+
 console.log(myCourses);
-
 
 // learn how to use the some and every methods
 
 const atLeastOnePositive = numbers.some(function (value) {
-    return value >= 0;
+  return value >= 0;
 });
 
 const isAllPositive = numbers.every(function (value) {
   return value >= 0;
 });
 
+console.log(atLeastOnePositive, isAllPositive);
 
-console.log(atLeastOnePositive, isAllPositive)
+// filters in js
+const list = [1, -1, 3, 4];
+const filtered = list.filter((n) => n >= 0); // select only positive numbers
+console.log(filtered);
+
+
+
+
+
+// getting the sum of all elements in an array
+// using reduce method
+
+const sum = list.reduce(
+  (accumulator, currentValue) => (accumulator += currentValue)
+);
+
+console.log(sum);
