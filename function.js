@@ -78,16 +78,20 @@ const person = {
 };
 
 try {
-
-    person.fullName = "John Bush";
+  person.fullName = "John Bush";
 } catch (e) {
-    console.log(e);
+  console.log(e);
 }
 
 console.log(person);
 
-
-
 // scope a variable defined in a block will b scoped to the block
 // avoid declaring global variables for constants
 // { } changes make a variable in a block can only be used in the block
+
+
+
+
+// problem with var: the varibles are not limited to the block but to the function
+// var also modifies the window object which is not a best pracice
+// the let is block scoped.
