@@ -64,8 +64,29 @@ console.log(last, numbers);
 
 
 // empty and array 
-numbers = []; // cannot be use when the memory has been referenced
+// numbers = []; // cannot be use when the memory has been referenced and does not work on const
 numbers.length = 0; // best solution
 numbers.splice(0, numbers.length);
 
 
+
+// concatenate arrays
+const first = [1, 2];
+const lastArray = [3, 4];
+
+const combined = first.concat(lastArray);
+
+console.log(combined);
+
+
+// slice arrays in to parts
+const slice = combined.slice(2, 4);
+console.log(slice);
+
+// if we use reference types like
+// objects then memory location is copied in the new array
+
+
+
+
+// the cleanest way is to use the spread operator
