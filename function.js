@@ -53,33 +53,41 @@ function interest(principal, rate = 3.5, years = 5) {
   return ((principal * rate) / 100) * years;
 }
 
-console.log(interest(10000, 3, 5)); // we can use undefined to skip a defualt parameter 
-
-
-
-
-
-
+console.log(interest(10000, 3, 5)); // we can use undefined to skip a defualt parameter
 
 // getter and setter
 
-
-// getter are used to get properties 
+// getter are used to get properties
 // setters are used to set properties
 
 const person = {
-    firstName: 'Mosh',
-    lastName: 'Peeker',
-    get fullName() {
-        return '${person.firsName} ${person.lastName}'
-    },
-    set fullName(value) {
-        const parts = value.split(' ');
-        this.firstName = parts[0];
-        this.lastName = parts[1];
-    }
+  firstName: "Mosh",
+  lastName: "Peeker",
+  get fullName() {
+    return "${person.firsName} ${person.lastName}";
+  },
+  set fullName(value) {
+    if (typeof value !== "string") throw new Error("Value is not a string");
+
+    const parts = value.split(" ");
+    if (parts.length !== 2) throw new Error("Enter a first and last name");
+
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  }, // the getter and setter have thesame name
+};
+
+try {
+
+    person.fullName = "John Bush";
+} catch (e) {
+    console.log(e);
 }
 
-person.fullName = 'John Smith';
-
 console.log(person);
+
+
+
+// scope a variable defined in a block will b scoped to the block
+// avoid declaring global variables for constants
+// { } changes make a variable in a block can only be used in the block
