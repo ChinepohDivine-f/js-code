@@ -47,28 +47,22 @@ const course2 = courses.findIndex((course) => course.name === "Boss");
 console.log(course);
 console.log(course2);
 
-
 // removing elements
 numbers.pop(); // remove from end
 numbers.shift(); // remove from beginnig
 numbers.splice(); // remove from middle
 
-
-// using these method, the element that was removed is return 
+// using these method, the element that was removed is return
 // this can be store for later use
 
 // e.g
 const last = numbers.pop();
 console.log(last, numbers);
 
-
-
-// empty and array 
+// empty and array
 // numbers = []; // cannot be use when the memory has been referenced and does not work on const
 numbers.length = 0; // best solution
 numbers.splice(0, numbers.length);
-
-
 
 // concatenate arrays
 const first = [1, 2];
@@ -78,7 +72,6 @@ const combined = first.concat(lastArray);
 
 console.log(combined);
 
-
 // slice arrays in to parts
 const slice = combined.slice(2, 4);
 console.log(slice);
@@ -86,7 +79,18 @@ console.log(slice);
 // if we use reference types like
 // objects then memory location is copied in the new array
 
-
-
-
 // the cleanest way is to use the spread operator
+const combinesSpread = [...first, "a", ...lastArray];
+console.log(combinesSpread);
+
+// also we can copy the spread
+const copy = [...combined];
+console.log(copy);
+
+
+
+
+// iterating an array
+for (let number of combined) console.log(number);
+
+combined.forEach((number) => console.log(number));
