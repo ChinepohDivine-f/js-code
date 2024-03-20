@@ -30,3 +30,21 @@ console.log(circle1);
 
 const circle2 = createCircle(3);
 console.log(circle2);
+
+// constructor funtions
+// here we use pascal case: OneTwoThree
+// and for regular function we use camel case
+// oneTwoThree
+
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// this refers to a global object
+
+const myFather = new Person("John", "Doe", 40, "brown");
+
+console.log(myFather);
