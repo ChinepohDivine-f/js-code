@@ -8,3 +8,10 @@ const circle=  {
 console.log(circle.area);
 
 // the area is read only 
+
+
+
+
+
+
+
